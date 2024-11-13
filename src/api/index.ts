@@ -16,3 +16,4 @@ const storeApi = new StoreApi(configuration, undefined, axiosInstance);
 const userApi = new UserApi(configuration, undefined, axiosInstance);
 
 export { petApi, storeApi, userApi };
+export * from "./generated"; // exporting all generated types as well

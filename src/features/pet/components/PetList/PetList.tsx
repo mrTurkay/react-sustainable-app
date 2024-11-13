@@ -1,5 +1,8 @@
 import React from "react";
-import { useFindPetsByStatusQuery } from "../../hooks/usePetQueries";
+
+import { Pet } from "@/api";
+import { useFindPetsByStatusQuery } from "@/features/pet/api";
+
 import { PetListItem } from "./subcomponents/PetListItem";
 
 const PetList: React.FC = () => {
@@ -16,7 +19,7 @@ const PetList: React.FC = () => {
     <div>
       <h2>Pet List</h2>
       <ul>
-        {pets.map((pet) => (
+        {pets.map((pet: Pet) => (
           <PetListItem key={pet.id} pet={pet} />
         ))}
       </ul>

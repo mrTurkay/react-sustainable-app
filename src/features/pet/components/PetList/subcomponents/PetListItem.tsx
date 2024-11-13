@@ -1,4 +1,4 @@
-import { Pet } from "../../../../../api/generated";
+import { Pet } from "@/api";
 
 export const PetListItem = ({ pet }: { pet: Pet }) => {
   return (

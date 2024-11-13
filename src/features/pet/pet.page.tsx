@@ -1,5 +1,6 @@
 import React from "react";
-import PetList from "./components/PetList/PetList";
+
+import PetList from "@/features/pet/components/PetList/PetList";
 
 const PetPage: React.FC = () => (
   <>

@@ -1,5 +1,5 @@
 import "./App.css";
-import PetPage from "./features/pet/pet.page";
+import PetPage from "@/features/pet/pet.page";
 
 function App() {
   return (

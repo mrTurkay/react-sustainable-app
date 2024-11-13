@@ -1,6 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
-import { petApi } from "../../../api";
-import { FindPetsByStatusStatusEnum } from "../../../api/generated";
+import { FindPetsByStatusStatusEnum, petApi } from "../../../api";
 
 export type UseFindPetsByStatusQueryParams = {
   status?: FindPetsByStatusStatusEnum[];
@@ -12,6 +11,8 @@ export const useFindPetsByStatusQuery = ({
   return useQuery({
     queryKey: ["pets", status],
     queryFn: () => petApi.findPetsByStatus(status),
-    select: (response) => response?.data,
+    select: (response) => response?.data, // data transformation here
+    enabled: status.length > 0, // fetch on a case
+    staleTime: 1000 * 60 * 5, // 5 minutes cache
   });
 };
