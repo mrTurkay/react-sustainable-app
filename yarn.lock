@@ -600,6 +600,11 @@
   resolved "https://registry.yarnpkg.com/@tootallnate/quickjs-emscripten/-/quickjs-emscripten-0.23.0.tgz#db4ecfd499a9765ab24002c3b696d02e6d32a12c"
   integrity sha512-C5Mc6rdnsaJDjO3UpGW/CQTHtCKaYlScZTly4JIu97Jxo/odCiH0ITnDXSJPTOrEKk/ycSZ0AOgTmkDtkOsvIA==
 
+"@ts-react/form@^1.8.3":
+  version "1.8.3"
+  resolved "https://registry.yarnpkg.com/@ts-react/form/-/form-1.8.3.tgz#8ace0b66fe6e7998ff1ad467ad7098a6a76445b5"
+  integrity sha512-r/QALdzmMHh8zkVA3YCjmzIInIEx4QwWUeffE0t8TGRj0qaszGXmGvlX4ZrNGnB67bQj/g+doDwa2FEyvJ7yfw==
+
 "@types/babel__core@^7.20.5":
   version "7.20.5"
   resolved "https://registry.yarnpkg.com/@types/babel__core/-/babel__core-7.20.5.tgz#3df15f27ba85319caa07ba08d0721889bb39c017"

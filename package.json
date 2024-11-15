@@ -14,6 +14,7 @@
     "@hookform/resolvers": "^3.9.1",
     "@openapitools/openapi-generator-cli": "^2.15.3",
     "@tanstack/react-query": "^5.59.20",
+    "@ts-react/form": "^1.8.3",
     "axios": "^1.7.7",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
