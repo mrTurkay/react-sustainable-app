@@ -1,50 +1,72 @@
-# React + TypeScript + Vite
+# Pet Shop Example Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the **Pet Shop Example Project** 🏨—a showcase of best practices for building **sustainable React applications**. This project demonstrates:
 
-Currently, two official plugins are available:
+- **File Structure:** A feature-first organization for scalable and maintainable code.
+- **API Integration:** Using TypeScript and Axios with schema-based code generation for clean and efficient API calls.
+- **Forms:** A modular and reusable form setup powered by Zod and React Hook Form.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## The articles about this project
+- EN: https://medium.com/@muratturkaym/how-to-build-a-sustainable-react-application-3a75d6873987
+- TR: https://medium.com/@muratturkaym/sen-s%C3%BCrd%C3%BCr%C3%BClebilir-bir-react-uygulamas%C4%B1-nas%C4%B1l-geli%C5%9Ftirilir-47da3ba8877a
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### 🗂 Feature-Based File Structure
+The project is organized by feature, promoting encapsulation and scalability. Each feature includes its own components, hooks, and logic.
 
-- Configure the top-level `parserOptions` property like this:
+### 🔄 API Integration
+APIs are generated automatically using **OpenAPI Generator** for:
+- Type safety
+- Reduced boilerplate
+- Seamless integration
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+### 📈 Modular Forms
+Forms are designed with:
+- Zod for schema-based validation
+- React Hook Form for lightweight and powerful form state management
+- Type-safe and reusable field components
+
+## Tech Stack
+
+- **React**: UI development
+- **TypeScript**: Type safety and scalability
+- **React Hook Form**: Form state management
+- **Zod**: Schema validation
+- **Axios**: API requests
+- **OpenAPI Generator**: Automated API client generation
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v16 or above)
+- Yarn or npm
+
+### Installation
+
+Clone the repository and install dependencies:
+
+```bash
+# Clone the repo
+git clone https://github.com/mrTurkay/react-sustainable-app.git
+cd react-sustainable-app
+
+# Install dependencies
+yarn install
+# or
+npm install
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### Running the Application
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+Start the development server:
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```bash
+yarn dev
+# or
+npm run dev
 ```
+
+Visit [http://localhost:5173/](http://localhost:5173/) to view the app in the browser.
+
