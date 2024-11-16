@@ -1,4 +1,4 @@
-# Pet Shop Example Project
+# How to Build a Sustainable React Application? Encapsulation, Auto Code Generation, and Form Structure
 
 Welcome to the **Pet Shop Example Project** 🏨—a showcase of best practices for building **sustainable React applications**. This project demonstrates:
 
